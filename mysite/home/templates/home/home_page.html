@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %} 
+<h1>{{ page.title }}</h1>
+
+
+<section>
+    <ul>
+        <li><a href="http://localhost:8000/contact/#Ressources">contact</a></li>
+        <li><a href="http://localhost:8000/les-jardin/#Ressources">Les jarrdins</a></li>
+    </ul>
+</section>
+
+
+<body>
+    <p>Les Jardins Partagés de Bègles rassemblent des habitant·e·s du quartier autour d’un même potager collectif. Depuis 2019, nous cultivons légumes et convivialité, ensemble, sans pesticides, ouverts à tous les âges et tous les niveaux d’expérience.</p>
+
+            <!-- Insertion de l'image -->
+        <div class="conteneur-images taille-image-2">
+            <img src="{% static 'images/Jardin1.jpg' %}" alt="Jardin partagé">
+        </div> 
+</body>
+    
+<footer>
+     <h2 id="Ressources"></h2> <!--permet de créer un encrage pour le lien "Ressources" dans la section au-dessus. Cela permet aux utilisateurs de cliquer sur le lien et d'être dirigés directement vers cette section qui se situe au pied de page. -->
+    <p>Email : contact@jardins-begles.exemple.comn</p>
+    <p>Adresse : Allée des Jardiniers, 33130 Bègles</p>
+    <p>Permanence : tous les samedis de 10h à 12h</p>
+</footer>
+
+{% endblock content %}

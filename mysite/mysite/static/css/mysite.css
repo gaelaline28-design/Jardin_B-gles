@@ -1,0 +1,31 @@
+/* si l'actualisation de page ne fonctionne pas, quand on met à jour, faire un ctfl + majuscule + r, pour vider les caches */
+
+body {
+/* Dégradé de gauche à droite sur toute la page */
+    /* background: linear-gradient(to right, #4d749c, #223b54); */
+    /* Foncé en vert à gauche à marron à droite,  */
+       background: linear-gradient(to right, #21421c, #694203);  
+    
+    /* Tes autres propriétés pour centrer et styliser le contenu global */
+    font-family: ArialBla, sans-serif;
+    /* max-width: 700px;
+    margin: 40px auto; */
+    padding: 0 20px; /*créer un margesur toute la page */
+    color: #b2b2f0;   
+}
+h1 {
+    color: #16a085;
+}
+
+.conteneur-images {
+    display: flex;       /* Aligne les 2 images côte à côte */
+    gap: 200px;           /* Règle l'écartement entre les images */
+    margin-bottom: 25px; /* Espace sous le bloc d'images */
+    justify-content: center
+}
+.taille-image-2 {
+    width: 400px;        /* Largeur fixe pour harmoniser les deux images */
+    height: 400px;       /* Hauteur fixe pour former des carrés identiques */
+    object-fit: cover;   /* Évite de déformer l'image */
+    border-radius: 8px;  /* Optionnel : arrondit légèrement les coins */
+}

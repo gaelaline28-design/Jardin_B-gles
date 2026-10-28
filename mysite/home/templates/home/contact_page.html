@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %} 
+
+<h1>{{ page.title }}</h1>
+
+
+<section>
+    <ul>
+        <li><a href="http://127.0.0.1:8000/#Ressources">informations</a></li>
+        
+    </ul>
+</section>
+
+
+<body>
+    <p>Pour nous rejoindre ou simplement venir visiter, contactez-nous :</p>
+    <p>Email : contact@jardins-begles.exemple.com</p>
+    <p>Adresse : Allée des Jardiniers, 33130 Bègles</p>
+    <p>Permanence : tous les samedis de 10h à 12h</p>
+
+            <!-- Insertion de l'image -->
+        <div class="conteneur-images taille-image-2">
+            <img src="{% static 'images/Jardinier.jpg' %}" alt="Jardin partagé">
+        </div> 
+</body>
+    
+
+{% endblock content %}

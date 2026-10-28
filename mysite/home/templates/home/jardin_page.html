@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %} 
+
+<h1>{{ page.title }}</h1>
+<section>
+    <ul>
+        <li><a href="http://127.0.0.1:8000/#Ressources">informations</a></li>
+    </ul>
+</section>
+
+
+<body>
+    <p>Notre jardin s’étend sur 400m², avec une vingtaine de parcelles individuelles et un espace collectif. Chaque membre peut cultiver sa propre parcelle, participer aux récoltes communes, ou simplement venir donner un coup de main le samedi matin.</p>
+
+            <!-- Insertion de l'image -->
+        <div class="conteneur-images taille-image-2">
+            <img src="{% static 'images/Jardin2.jpg' %}" alt="Jardin partagé">
+        </div>    
+</body>
+    
+{% endblock content %}
